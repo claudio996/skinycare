@@ -1,0 +1,54 @@
+Bienvenidos a SkinyCare
+Un espacio exclusivamente estético, con 3 años de experiencia entregando confianza, seguridad y tecnología al
+servicio de la salud y belleza de la piel.
+
+SkinyCare posee moderna y segura tecnología en equipamiento:
+Fotodepilación: Láser Alexandrita, Diodo y ND-Yag, SHR MAX (IPL con tecnología láser y barrido)
+Fototerapia: Luz Pulsada Intensa
+
+Nuestros equipos, están certificados por la FDA de Estados Unidos (U.S. Food and Drug Administration), cuentan con todas
+las mantenciones periódicas al día por parte del fabricante, lo que asegura su correcto funcionamiento y estado, en el afán
+de brindar el mejor servicio a nuestros clientes.
+
+Contamos con profesionales altamente calificados y certificados
+
+SERVICIOS
+Fotodepilación
+En SkinyCare encontrarás la tecnología más innovadora en depilación láser ALEMÁN junto con un servicio personalizado.
+Nuestro equipo multiláser sopramax combina los beneficios de las 3 longitudes de onda más poderosas del mercado,
+Alexandrita, Diodo y ND-Yag.), logrando mayor efectividad en más tipos de piel. Nuestro equipo SHR MAX combina IPL con
+Tecnología Láser. Esta tecnología incorpora barrido en sus disparos, para trabajar zonas medianas o grandes en menor
+tiempo y con mayor seguridad.
+(Video/foto)
+
+Agenda una evaluación gratuita para conocer en detalle en qué consiste el tratamiento.
+
+(Botón) Agendar evaluación gratuita
+
+Completa el formulario y nuestro equipo se pondrá en contacto contigo a la brevedad.
+Nombre:
+Correo electrónico (opcional):
+Teléfono:
+Tratamiento de interés:
+Tu mensaje (Opcional)
+(Botón) Enviar
+
+Fototerapia
+
+Nuestro equipo IPL multiplataforma realiza 5 tipos de tratamientos a través de sus diferentes filtros
+Rejuvenecimiento
+Pigmento
+Rosácea
+Acné
+Arrugas
+
+PROMOCIONES
+
+
+Requerimientos funcionales 
+Agenda de evaluación (tratamientos)
+formulario de contacto.
+
+No funcionales
+Teal-paleta-beigh
+Responsive

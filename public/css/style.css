@@ -5,9 +5,15 @@
     --dark: #181d38;
 }
 
+.mi-nav{
+    color: #06BBCC;
+}
+
+
 .fw-medium {
     font-weight: 600 !important;
 }
+
 
 .fw-semi-bold {
     font-weight: 700 !important;
@@ -101,7 +107,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -157,7 +163,7 @@
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
@@ -207,7 +213,7 @@
     background: rgba(15, 23, 43, .7);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -318,6 +324,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -325,6 +332,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -431,4 +439,70 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.shared-panel {
+    overflow: auto;
+}
+
+.shared-panel span {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.shared {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    /* Recurso incluido en la descarga del ejemplo */
+    background: url("shared.png") no-repeat;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.shared:hover {
+    opacity: 0.7;
+}
+
+.shared.gp {
+    background-position: 0px 0px;
+    background-color:
+        #E62B34;
+}
+
+.shared.tt {
+    background-position: 0px -30px;
+    background-color:
+        #43BDF0;
+}
+
+.shared.ce {
+    background-position: 0px -60px;
+    background-color:
+        #8A898D;
+}
+
+.shared.wa {
+    background-position: 0px -90px;
+    background-color:
+        #0dc143;
+}
+
+.shared.fb {
+    background-position: 0px -120px;
+    background-color:
+        #6081C4;
+}
+
+.st2 {
+    border-radius: 0;
+}
+
+.st3 {
+    border-radius: 5px;
 }
