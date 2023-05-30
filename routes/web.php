@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FotodepilacionController;
+use App\Http\Controllers\FototerapiaController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -20,3 +22,5 @@ Route::get('/', function () {
 });
 
 Route::get('/contactos', [ContactController::class, 'index']);
+Route::get('/servicios-1', [fotodepilacionController::class, 'index']);
+Route::get('/servicios-2', [fototerapiaController::class, 'index']);

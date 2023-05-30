@@ -57,7 +57,15 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Quienes Somos</a>
                
-                <a href="courses.html" class="nav-item nav-link">Servicios</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="{{ url('/servicios-1') }}"  class="dropdown-item">Fotodepilación</a>
+                        <a href="{{ url('/servicios-2')  }}"  class="dropdown-item">Fototerapia</a>
+                        {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
+                    </div>
+                </div>
+
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Consultas</a>
                     <div class="dropdown-menu fade-down m-0">
@@ -70,10 +78,6 @@
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Cotiza aqui<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
-
-
-        
-
     </nav>
 
        <div class="row">
