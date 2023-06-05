@@ -4,17 +4,15 @@
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
 
-                <h1 class="mb-5">Fototerapia</h1>
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="section-title bg-white text-center text-primary px-3">Fototerapia
+                    </h2>
 
-
+                </div>
                 <!-- Courses Start -->
                 <div class="container-xxl py-5">
                     <div class="container">
-                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="section-title bg-white text-center text-primary px-3">Servicios y tratamientos
-                            </h6>
-                         
-                        </div>
+
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div class="course-item bg-light">
@@ -22,9 +20,10 @@
                                         <img class="img-fluid" src="img/logo.png" alt="">
                                         <div
                                             class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                            <h5 class="mb-0">Tratamiento facial masculino</h5>
                                             <a href="#"
-                                                class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                                style="border-radius: 30px 0 0 30px;">Ver servicio</a>
+                                                class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"style="border-radius: 30px 0 0 30px;">Ver
+                                                servicio</a>
                                             <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
                                                 style="border-radius: 0 30px 30px 0;">Agendar</a>
                                         </div>
@@ -54,7 +53,7 @@
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                                 <div class="course-item bg-light">
                                     <div class="position-relative overflow-hidden">
-                                        <img class="img-fluid" src="img/logo.png" alt="">
+                                        <img class="img-fluid" src="./img/logo.png" alt="">
                                         <div
                                             class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                             <a href="#"
@@ -90,6 +89,8 @@
                                 <div class="course-item bg-light">
                                     <div class="position-relative overflow-hidden">
                                         <img class="img-fluid" src="img/logo.png" alt="">
+
+
                                         <div
                                             class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
                                             <a href="#"

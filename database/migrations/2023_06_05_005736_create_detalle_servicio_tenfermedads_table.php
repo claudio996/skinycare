@@ -11,16 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('detalle_servicio_tenfermedads', function (Blueprint $table) {
             $table->id();
-            $table->string('nombres');
-            $table->string('apellidos');
-            $table->string('dirección');            
-            $table->string('telefono');
-            $table->string('correo');
-            $table->string('estado')->default(1);
             $table->timestamps();
-            
         });
     }
 
@@ -29,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clientes');
+        Schema::dropIfExists('detalle_servicio_tenfermedads');
     }
 };

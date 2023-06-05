@@ -60,8 +60,8 @@
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="{{ url('/servicios-1') }}"  class="dropdown-item">Fotodepilación</a>
-                        <a href="{{ url('/servicios-2')  }}"  class="dropdown-item">Fototerapia</a>
+                        <a href="{{ url('/tratamientos-fotodepilacion') }}"  class="dropdown-item">Fotodepilación</a>
+                        <a href="{{ url('/tratamientos-fototerapia')  }}"  class="dropdown-item">Fototerapia</a>
                         {{-- <a href="404.html" class="dropdown-item">404 Page</a> --}}
                     </div>
                 </div>
