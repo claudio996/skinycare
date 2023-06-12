@@ -65,6 +65,12 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('js/main.js') }}"></script>
+    <script>
+        $('#exampleModal').on('shown.bs.modal', function() {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
 </body>
 
 </html>

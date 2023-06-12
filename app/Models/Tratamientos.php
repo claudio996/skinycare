@@ -25,4 +25,10 @@ class Tratamientos extends Model
     {
         return $this->belongsTo(DetalleServicioTratamiento::class);
     }
+
+    
+    public function reservas(): BelongsTo
+    {
+        return $this->belongsTo(reservas::class);
+    }
 }

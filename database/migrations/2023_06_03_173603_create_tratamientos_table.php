@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->integer('numero_sesiones');
-            $table->integer('precio_oferta')->default(0);
-            $table->integer('precio_normal')->default(0);
+            $table->float('precio_oferta')->default(0);
+            $table->float('precio_normal')->default(0);
             $table->string('imagen');
             $table->unsignedBigInteger('zonas_id');
             $table->foreign('zonas_id')->references('id')->on('zonas')->nullable()->constrained()

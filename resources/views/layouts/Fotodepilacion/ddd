@@ -1,0 +1,59 @@
+  <div class="container mt-3">
+        <div class="row">
+
+            <?php
+            include_once "db_empresa.php";
+            $conexion = mysqli_connect($db_host, $db_user, $db_pass, $db_database);
+            if ($conexion != true) {
+                die("Error de conexion " . mysqli_connect_error());
+            }
+            $sql = "SELECT `marca`, `modelo`, `anio`, `imagen` FROM `autos`";
+            $resultSet = mysqli_query($conexion, $sql);
+            while ($row = mysqli_fetch_row($resultSet)) {
+                ?>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="images/<?php echo $row[3]; ?>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row[0] . " " . $row[1]; ?></h5>
+                            <p class="card-text">
+                                Año:<?php echo $row[2]; ?>
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+            ?>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="card-section border rounded ml-4 mr-4">
+                                    <div class="card-header card-header-second rounded">
+                                        <h2 class="card-header-title mb-3 mt-1 text-white">Ventas</h2>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <img class="card-img-top" src="img/logo.png" alt="Card image cap">
+    
+                                        <div class="d-flex border-top">
+                                            <small class="flex-fill text-center border-end py-2"><i
+                                                    class="fa fa-user-tie text-primary me-2"></i>Profesional</small>
+                                            <small class="flex-fill text-center border-end py-2"><i
+                                                    class="fa fa-clock text-primary me-2"></i>Duración: 1.49 Hrs</small>
+                                            <small class="flex-fill text-center py-2"><i
+                                                    class="fa fa-user text-primary me-2"></i>Disponible</small>
+                                        </div>
+                                        <h5 class="mb-4">Tratamiento facial femenino</h5>
+                                        <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                            style="border-radius: 30px 0 0 30px;">Ver servicio</a>
+                                        <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                            style="border-radius: 0 30px 30px 0;">Agendar</a>
+    
+    
+                                    </div>
+                                </div>

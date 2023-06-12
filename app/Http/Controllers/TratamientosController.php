@@ -10,6 +10,8 @@ class TratamientosController extends Controller
 
     public function Fotodepilacion()
     {
+
+
         /* 
         SELECT t.nombre, t.numero_sesiones, t.precio_oferta, t.imagen, t.zonas_id, d.sexo, s.nombre, s.tipo, z.zona_corporal
         FROM detalle_servicio_tratamientos AS d,
@@ -22,12 +24,32 @@ class TratamientosController extends Controller
         AND s.tipo = 1;
  */
 
-        $tfotodepilacion = DB::table('detalle_servicio_tratamientos')
-            ->where('servicios_id', '=', 1)->get();
-        echo $tfotodepilacion;
 
+        $data = DB::table('detalle_servicio_tratamientos')
+            ->join('tratamientos', 'tratamientos.id', '=', 'detalle_servicio_tratamientos.tratamientos_id')
+            ->join('servicios',  'detalle_servicio_tratamientos.servicios_id', '=', 'servicios.id')
+            ->join('zonas', 'zonas.id', '=', 'tratamientos.zonas_id')
+            // ->join('orders', 'users.id', '=', 'orders.user_id')s
+            ->select('tratamientos.*', 'zonas.zona_corporal')
+            ->where('.servicios.tipo', '=', 1)
+            ->get();
 
-        return view('layouts.Fotodepilacion.index', ['data' => $tfotodepilacion]);
+            if (isset($data) && count($data) > 0) {  
+                 return view('layouts.Fotodepilacion.index', ['data' => $data]);
+       
+            }else{
+             echo('sindatos');
+            }
+            
+            
+            
+        
+        /*  $tfotodepilacion = DB::table('detalle_servicio_tratamientos')
+            ->where('servicios_id', '=', 1)->get(); */
+
+    
+
+       
     }
 
     public function Fototerapia()
