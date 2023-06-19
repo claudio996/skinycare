@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TratamientosController;
 use Illuminate\Support\Facades\Route;
+use GuzzleHttp\Psr7\Request;
 
 
 /*
@@ -23,3 +24,4 @@ Route::get('/', function () {
 Route::get('/contactos', [ContactController::class, 'index']);
 Route::get('/tratamientos-fotodepilacion', [TratamientosController::class, 'Fotodepilacion']);
 Route::get('/tratamientos-fototerapia', [TratamientosController::class, 'Fototerapia']);
+Route::post('/GetHora', [TratamientosController::class,'getHora' ]);

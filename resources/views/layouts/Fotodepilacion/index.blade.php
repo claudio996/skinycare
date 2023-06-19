@@ -22,13 +22,9 @@
                                         <img class="img-fluid" src="img/PACK-F1.png" alt="">
                                         <div
                                             class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                            <a href="#"
-                                                class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
-                                                style="border-radius: 30px 0 0 30px;">Agendar</a>
-
                                             <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
-                                                style="border-radius: 0 30px 30px 0;" data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop">Ver disponibilidad</a>
+                                                style="border-radius:30px 30px;" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Agendar</a>
 
 
                                         </div>
@@ -43,21 +39,38 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header bg-info">
-                                                    <small style="color:rgb(237, 247, 255)">CONSULTAR HORA</small>                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    <small style="color:rgb(237, 247, 255)">CONSULTAR HORARIOS
+                                                        DISPONIBLES</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <div class="form">
-                                                          <input type="date" class="form-control" name="fecha" id="fecha" placeholder="Introduce una fecha" required min=<?php $hoy=date("Y-m-d"); echo $hoy;?> >
+
+                                                    {{-- <div class="form pt-2">
+                                                        <select name="" id="" class="form-control">
+                                                            <option value="">12:30</option>
+                                                        </select>
+                                                    </div> --}}
+
+                                                    <div class="input-group date datepicker ">
+                                                        <input type="text" class="form-control" id="fecha">
+                                                        <span class="input-group-addon">
+                                                            <i class="bi bi-calendar-date"></i>
+
+                                                        </span>
                                                     </div>
-                                                  <div class="form pt-2">
-                                                      <select name="" id="" class="form-control">
-                                                        <option value="">12:30</option>
-                                                      </select>
-                                                  </div>
+
+
+
+
+                                                    <div class="form pt-2" style="align-content: center">
+
+                                                        <button type="button" class="btn btn-info">Horarios</button>
+                                                    </div>
+
                                                 </div>
 
-                                                
+
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Cerrar</button>

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
 
 class TratamientosController extends Controller
 {
@@ -34,24 +36,23 @@ class TratamientosController extends Controller
             ->where('.servicios.tipo', '=', 1)
             ->get();
 
-            if (isset($data) && count($data) > 0) {  
-                 return view('layouts.Fotodepilacion.index', ['data' => $data]);
-       
-            }else{
-             echo('sindatos');
-            }
-            
-            
-            
-        
+        if (isset($data) && count($data) > 0) {
+            return view('layouts.Fotodepilacion.index', ['data' => $data]);
+        } else {
+            echo ('sindatos');
+        }
+
+
+
+
         /*  $tfotodepilacion = DB::table('detalle_servicio_tratamientos')
             ->where('servicios_id', '=', 1)->get(); */
-
-    
-
-       
     }
 
+    public function getHora(Request $request)
+    {
+        return 'ok';
+    }
     public function Fototerapia()
     {
         $tfototerapia = DB::table('detalle_servicio_tratamientos')
