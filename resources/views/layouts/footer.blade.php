@@ -84,6 +84,9 @@
         }).change(function() {
 
             let fecha = $('#fecha').val();
+           const fa = fecha.split("-").reverse().join("-");
+            alert(fa);
+
 
             $.ajax({
                 headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},

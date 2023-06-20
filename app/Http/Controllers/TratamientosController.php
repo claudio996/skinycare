@@ -49,8 +49,27 @@ class TratamientosController extends Controller
             ->where('servicios_id', '=', 1)->get(); */
     }
 
-    public function getHora(Request $request)
+    public function getHora()
     {
+        /*Select * from horas where not exists
+        (select hora from reservas where reservas.horas_id = horas.id and reservas.fecha = '2023-06-08')*/
+
+        $horas = DB::table('horas')
+            ->whereNotExists(function ($query) {
+                $query->select('hora')
+                    ->from('reservas')
+                    ->whereRaw('reservas.horas_id = horas.id')
+                    ->where('reservas.fecha', '=', '2023-06-08');
+            })
+            ->get();
+            
+
+            dd($horas);
+
+
+
+
+
         return 'ok';
     }
     public function Fototerapia()
