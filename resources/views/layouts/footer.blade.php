@@ -84,18 +84,18 @@
         }).change(function() {
 
             let fecha = $('#fecha').val();
-           const fa = fecha.split("-").reverse().join("-");
-            alert(fa);
-
+            const fechaFormateada = fecha.split("-").reverse().join("-");
 
             $.ajax({
-                headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
 
                 url: "{{ url('/GetHora') }}",
-                type: "POST",
-               
+                method: "POST",
+                dataType: 'json',
                 data: {
-                    getFecha: fecha,
+                    getFecha: fechaFormateada,
                     "_token": "{{ csrf_token() }}",
                 },
                 success: function(data) {
